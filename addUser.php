@@ -39,7 +39,7 @@ if($_SERVER["REQUEST_METHOD"] === "POST"){
     }elseif(loginExist($login))
     {
         $message = "Пользователь с таким логином уже сущ";
-    }elseif(loginExist($login)){{
+    }elseif(loginExist($login)){
         $user =[
             "login" => $login,
             "password" => $password,
@@ -87,6 +87,14 @@ if($message !== ""){
      <p>
         <label>Пароль:</label>
         <input type="password" name ="password">
+    </p>
+     <p>
+        <label>город:</label>
+        <input type="city" name ="city">
+    </p>
+     <p>
+        <label>майл:</label>
+        <input type="email" name ="email">
     </p>
      <p>
         <label>майл:</label>
